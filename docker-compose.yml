@@ -3,7 +3,7 @@ version: '3'
 services:
   jpyxdnode0:
     container_name: jpyxdnode0
-    image: "lcnem/jpyxnode"
+    image: "neukind/jpyx"
     ports:
       - "26656-26657:26656-26657"
     environment:
@@ -17,7 +17,7 @@ services:
 
   jpyxdnode1:
     container_name: jpyxdnode1
-    image: "lcnem/jpyxnode"
+    image: "neukind/jpyx"
     ports:
       - "26659-26660:26656-26657"
     environment:
@@ -31,7 +31,7 @@ services:
 
   jpyxdnode2:
     container_name: jpyxdnode2
-    image: "lcnem/jpyxnode"
+    image: "neukind/jpyx"
     environment:
       - ID=2
       - LOG=${LOG:-kvd.log}
@@ -45,7 +45,7 @@ services:
 
   jpyxdnode3:
     container_name: jpyxdnode3
-    image: "lcnem/jpyxnode"
+    image: "neukind/jpyx"
     environment:
       - ID=3
       - LOG=${LOG:-kvd.log}
